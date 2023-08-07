@@ -45,19 +45,21 @@ nav.desktop-menu ul li a {
     font-size: 23px;
     transition: all 0.1s ease;
 }
-nav.desktop-menu ul li a::after{
+
+nav.desktop-menu ul li a::after {
     content: "";
     display: block;
     width: 0;
     height: 4px;
 }
-.desktop-menu ul li a:hover::after{
+
+.desktop-menu ul li a:hover::after {
     width: var(--Width100);
     height: 4px;
     border-radius: 2px;
     background-color: #8000ff;
 }
-    
+
 
 
 
@@ -293,10 +295,19 @@ section.sessao1 .container {
     padding: 140px 0 90px 0;
 }
 
-.sobre-autor {
-    float: left;
+.slider {
     max-width: 600px;
     padding-left: 30px;
+    overflow: hidden;
+}
+.scroll-wrapper{
+    width: var(--Width100);
+}
+
+.sobre-autor {
+    float: left;
+    width: var(--Width100);
+    padding: 0 30px;
 }
 
 .titulo-autor {
@@ -316,7 +327,7 @@ section.sessao1 .container {
 }
 
 .titulo-autor p {
-    margin-top: 1px;
+    margin-top: 5px;
     font-size: 14px;
     color: #232323;
     font-style: italic;
@@ -326,13 +337,14 @@ section.sessao1 .container {
 .titulo-autor .img-autor {
     float: left;
     position: relative;
-    top: -4px;
+    top: 0;
     width: 40px;
     height: 40px;
     border-radius: 100%;
     background-image: url(../imagens/pedro.png);
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+    
 
 }
 
@@ -351,7 +363,7 @@ section.sessao1 .container {
     width: var(--Width100);
     float: left;
     margin-top: 13px;
-    padding-left: 30px;
+    padding-left: 55px;
 }
 
 .centraliza {
@@ -366,6 +378,7 @@ section.sessao1 .container {
     margin-right: 5px;
     margin-left: 5px;
     cursor: pointer;
+    box-shadow: 0px 0px 4px -1px black;
 
 }
 
