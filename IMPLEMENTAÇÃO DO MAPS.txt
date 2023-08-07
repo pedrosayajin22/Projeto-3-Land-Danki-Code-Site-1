@@ -1,0 +1,2 @@
+        map.panTo({ 'lat': -23.550530, "lng": -46.633309 })
+ faz a mudança de uma coordenada para a outra.

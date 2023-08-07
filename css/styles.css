@@ -36,14 +36,34 @@ nav.desktop-menu ul {
 ul li {
     padding: 4px;
     margin: 0 10px;
-    
+
 }
 
 nav.desktop-menu ul li a {
     color: white;
     text-decoration: none;
     font-size: 23px;
+    transition: all 0.1s ease;
 }
+nav.desktop-menu ul li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+}
+.desktop-menu ul li a:hover::after{
+    width: var(--Width100);
+    height: 4px;
+    border-radius: 2px;
+    background-color: #8000ff;
+}
+    
+
+
+
+
+
+
 
 nav.mobile-menu {
     display: none;
@@ -448,16 +468,18 @@ section.sessao4 {
     border: 5px snow gray;
 }
 
-footer{
+footer {
     padding: 40px 2%;
     background-color: #192123;
     color: white;
 }
-footer p:nth-of-type(1){
+
+footer p:nth-of-type(1) {
     float: left;
     font-size: 14px;
 }
-footer p:nth-of-type(2){
+
+footer p:nth-of-type(2) {
     float: right;
     font-size: 14px;
 }
@@ -492,20 +514,23 @@ footer p:nth-of-type(2){
 
 
     }
-    footer{
-       
+
+    footer {
+
         text-align: center;
     }
-    footer p:nth-of-type(1){
+
+    footer p:nth-of-type(1) {
         float: none;
         font-size: 14px;
     }
-    footer p:nth-of-type(2){
+
+    footer p:nth-of-type(2) {
         float: none;
         font-size: 14px;
         margin-top: 7px;
     }
-    
+
 }
 
 @media screen and (max-width:768px) {
