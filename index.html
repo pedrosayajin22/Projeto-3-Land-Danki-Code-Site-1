@@ -175,13 +175,13 @@
     </section><!--sessao3-->
     <section class="sessao4" id="contato">
         <div class="container">
-            <div class="form">
+            <div class="form" >
                 <h2>Entre em contato</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id mauris lacinia, viverra felis ac,
                     lobortis libero. Vestibulum consectetur nulla id libero tempor, nec fringilla odio rhoncus. Proin
                     faucibus
                     lacus nec erat congue, ut maximus massa rutrum.</p>
-                <form>
+                <form method="post" action="form.php">
                     <input type="text" name="nome" placeholder="Nome">
                     <input type="text" name="email" placeholder="E-mail">
                     <textarea name="mensagem" placeholder="Mensagem" cols="30" rows="10"></textarea>
@@ -223,6 +223,15 @@
     <script src="/js/functions.js"></script>
     <script src="../scroll.js"></script>
     <script src="slider.js"></script>
+    <script>
+        $(function(){
+            $('form').ajaxForm({
+                'sucess':function(){
+                    alert("Formulario Enviado")
+                }
+            })
+        })
+    </script>
 
 </body>
 
